@@ -8,6 +8,8 @@
   background-image:url("../public/img.jpg");
   background-size: cover;
   background-color: white;
+  background-position: center;
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,5 +38,35 @@
   font-size: 16px;
   border-radius: 15px;
   font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  .text {
+    width: 70vw; 
+  }
+  
+  .next {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    width: 90vw;
+  }
+  
+  .next {
+    font-size: 12px;
+    padding: 6px;
+  }
+  
+  .body {
+    padding: 10px;
+  }
+  
+  .main {
+    font-size: medium;
+  }
 }
 
